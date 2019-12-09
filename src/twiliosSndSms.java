@@ -5,9 +5,9 @@ import java.lang.System;
 
 public class twiliosSndSms {
 	public static final String ACCOUNT_SID =
-            "ACc488155de3addc4317f3712b2685e317";
+            "ACCOUNT_SID";
     public static final String AUTH_TOKEN =
-            "074ac55abf7948f00775c57fdf70f023";
+            "AUTH_TOKEn";
 
     public static void sendSMS(String number,String body) {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
