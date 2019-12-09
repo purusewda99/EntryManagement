@@ -259,7 +259,7 @@ public class System extends JFrame {
 					table_update();
 					String body = "Name - "+name+"\nPhone - "+phoneNo+"\nEmail - "+email+"\nCheckin Time - "+checkInTime+"\nCheckout Time - "+checkOutTime+"\n";
 					JavaSendMail.sendMail(HostEmail, "Information about new Visitor "+name, body);
-					twiliosSndSms.sendSMS(HostPhoneNo,"Information about Visitor "+name+"\n"+body);
+					//twiliosSndSms.sendSMS(HostPhoneNo,"Information about Visitor "+name+"\n"+body);
 					table_update();
 				}
 				catch(Exception exc) {
@@ -287,7 +287,7 @@ public class System extends JFrame {
 				String body = "Name - "+name+"\nPhone - "+phoneNo+"\nEmail - "+email+"\nCheckin Time - "+checkInTime+"\nCheckout Time - "+checkOutTime+"\nHostName - Puru Sewda\nAddress - Jaipur,Rajasthan\n";
 				try {
 					JavaSendMail.sendMail(email, "Information about new Visitor "+name, body);
-					twiliosSndSms.sendSMS(phoneNo,"Information about your Visit \n"+body);
+					//twiliosSndSms.sendSMS(phoneNo,"Information about your Visit \n"+body);
 				} catch (MessagingException e) {
 					e.printStackTrace();
 				} catch (Exception e) {
